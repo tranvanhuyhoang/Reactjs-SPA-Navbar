@@ -1,3 +1,12 @@
+import {
+  BrowserRouter,
+  Link
+} from "react-router-dom";
+
 export default function Root(props) {
-  return <section>NAVBAR is mounted!</section>;
+  return {
+    <BrowserRouter>
+    <><Link to='/react'></Link><Link to='/vue'></Link></>
+    </BrowserRouter>
+  }
 }
